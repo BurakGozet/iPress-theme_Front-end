@@ -1,0 +1,21 @@
+{
+  "name": "iPress-theme_Front-end",
+  "author": "BurakGozet<gozetburak@gmail.com>",
+  "homepage": "https://github.com/BurakGozet/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BurakGozet/iPress-theme_Front-end.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-imagemin": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.2",
+    "grunt-recess": "~0.3.5",
+    "grunt-spritesmith": "^5.1.8",
+    "load-grunt-tasks": "^3.3.0",
+    "time-grunt": "^1.2.2"
+  }
+}
