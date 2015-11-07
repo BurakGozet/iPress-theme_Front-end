@@ -41,20 +41,6 @@
         }
       }
     },
-    imagemin: {
-      dist: {
-        options: {
-          optimizationLevel: 7,
-          progressive: true
-        },
-        files: [{
-          expand: true,
-          cwd: '_assets/img/',
-        src: '{,*/}*.{png,jpg,jpeg}',
-        dest: '_assets/img/'
-      }]
-    }
-  },
   sprite: {
     all: {
       src: '_assets/img/components/*.png',
@@ -104,12 +90,10 @@
    grunt.loadNpmTasks('grunt-contrib-uglify');
    grunt.loadNpmTasks('grunt-contrib-watch');
    grunt.loadNpmTasks('grunt-recess');
-   grunt.loadNpmTasks('grunt-contrib-imagemin');
    grunt.loadNpmTasks('grunt-spritesmith');
 
   // Register tasks
   grunt.registerTask('default', [
-    'imagemin',
     'sprite',
     'recess',
     'uglify'

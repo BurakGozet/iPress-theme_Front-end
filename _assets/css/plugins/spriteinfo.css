@@ -9,3 +9,9 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
+.icon-language-us {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 20px;
+  height: 13px;
+}
