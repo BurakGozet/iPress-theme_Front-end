@@ -72,7 +72,7 @@
       '_assets/css/components/*.css',
       '_assets/css/plugins/*.css', 
       ],
-      tasks: ['recess','clean']
+      tasks: ['recess']
     },
     js: {
       files: [
@@ -80,7 +80,14 @@
       '_assets/js/components/*.js'
       ],
       tasks: ['uglify']
-    }
+    },
+    img: {
+      files: '_assets/img/components/*.png',
+      tasks: ['sprite'],
+      options: {
+        livereload: true,
+      },
+    },
   },
 
   clean: {
