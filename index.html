@@ -1,6 +1,5 @@
-<!--.className>h2#burasidaID>a.class#id{icerik}-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//TR" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tr">
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,51 +8,113 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="_assets/js/scripts.js"></script>
   <link rel="stylesheet" href="_assets/css/main.css">
-  <title></title>
+  <title>iPress Front-End Responsive Burak Gozet</title>
 </head>
 <body>
   <header>
-    <div class="header-a">
-      <nav class="topbar">
-        <div class="container nonselect">
-          <div class="nav navbar-nav newsticker hidden-xs">
-            <div class="newsticker_Icon">
-              <div class="newsticker_icon_outline"></div>
-              <div class="newsticker_icon_center"></div>
+    <!--.className>h2#burasidaID>a.class#id{icerik}-->
+    <div class="header__top-bar">
+      <div class="container nonselect">
+        <div class="row">
+          <div class="col-md-6 hidden-xs hidden-sm clear-padding">
+            <div class="header__top-bar__newsticker">
+              <div class="header__top-bar__newsticker__icon">
+                <div class="header__top-bar__newsticker__icon__outline"></div>
+                <div class="header__top-bar__newsticker__icon__center"></div>
+              </div>
+              <div class="header__top-bar__newsticker__title">
+                <div class="header__top-bar__newsticker__title_text-animation">_</div>
+                <div class="header__top-bar__newsticker__title_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>             
+              </div>
             </div>
-            <div class="newsticker_title">
-              <div class="newsticker_title_text_animation">_</div>
-              <div class="newsticker_title_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>             
+          </div>
+          <div class="col-md-2 col-sm-3 hidden-xs clear-padding">
+            <div class="header__top-bar__date">
+              <div class="header__top-bar__date__text">Tuesday, 10 December</div>
             </div>
           </div>
-          <div class="nav navbar-nav navbar-right language-change">
-            <div class="language-change_icon icon-language-us"></div>
+          <div class="col-sm-4 visible-sm-block"></div>
+          <div class="col-md-3 col-sm-3 col-xs-4 clear-padding">
+            <div class="header__top-bar__social">
+              <div class="header__top-bar__social__icons">
+                <div class="header__top-bar__social__icons__icon dribbble"><i class="fa fa-dribbble"></i></div>
+                <div class="header__top-bar__social__icons__icon facebook"><i class="fa fa-facebook"></i></div>
+                <div class="header__top-bar__social__icons__icon googleplus"><i class="fa fa-google-plus"></i></div>
+                <div class="header__top-bar__social__icons__icon twitter"><i class="fa fa-twitter"></i></div>
+                <div class="header__top-bar__social__icons__icon rss"><i class="fa fa-rss"></i></div>
+              </div>
+            </div>
           </div>
-          <div class="nav navbar-nav navbar-right topbar-social">
-            <div class="topbar-social_icon topbar-social_icon_dribbble"><i class="fa fa-dribbble"></i></div>
-            <div class="topbar-social_icon topbar-social_icon_facebook"><i class="fa fa-facebook"></i></div>
-            <div class="topbar-social_icon topbar-social_icon_google-plus"><i class="fa fa-google-plus"></i></div>
-            <div class="topbar-social_icon topbar-social_icon_twitter"><i class="fa fa-twitter"></i></div>
-            <div class="topbar-social_icon topbar-social_icon_rss"><i class="fa fa-rss"></i></div>
+          <div class="col-xs-5 visible-xs-block"></div>
+          <div class="col-md-1 col-sm-2 col-xs-3 clear-padding">
+            <div class="header__top-bar__language-change">
+              <div class="header__top-bar__language-change__icon icon-language-us"></div>
+            </div>
+          </div>     
+        </div>
+      </div>
+    </div> 
+    <div class="header__main-bar">
+      <div class="container nonselect">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <a href="#">
+              <img class="header__main-bar__logo pull-left-lg" src="_assets/img/logo.png"/>
+            </a>
           </div>
-          <div class="nav navbar-nav navbar-right topbar-date">
-            <div class="topbar-date_text">Tuesday, 10 December</div>
+          <div class="col-lg-8 col-md-8">
+            <a href="#">
+              <img class="header__main-bar__advertisement" src="_assets/img/ads.png"/>
+            </a>
           </div>
         </div>
-      </nav>
+      </div>  
     </div>
-    <div class="header-b">
+    <nav>
+     <div class="header__navbar">
       <div class="container nonselect">
-        <div class="header-logo"><img class="logo" src="_assets/img/logo.png"/></div>
-        <div class="header-advertisement"><img class="advertisement" src="_assets/img/ads.png"/></div>
+        <div class="header__navbar__collapse-button navbar-toggle collapsed" data-toggle="collapse" data-target="#cps"><i class="fa fa-bars fa-lg"></i></div>
+        <div class="header__navbar__contents collapse navbar-collapse" id="cps">
+          <ul class="navbar-nav">
+            <li><a href="#"><i class="fa fa-home"></i></a></li>
+            <li><a href="#"><i class="fa fa-bars"></i></a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </header>
+  </nav>
+</header>
+<div style="height:500px;"></div>
+<footer>
+  <div class="footer">
+    <div class="container nonselect">
+      <div class="row">
+        <div class="footer__bigger">
 
-  <div style="height:5000px"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer__lower">
+          <div class="footer__lower__copyright">
+            © iPress Responsive Front-End. Designed by BurakGozet.
+          </div>
+          <div class="footer__lower__back-Top" id="toTop">
+           Back to top <i class="fa fa-upload"></i>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</footer>
 </body>
 </html>
 
