@@ -41,49 +41,61 @@
         }
       }
     },
-  sprite: {
-    all: {
-      src: '_assets/img/components/*.png',
-      dest: '_assets/img/sprite.png',
-      destCss: '_assets/css/plugins/spriteinfo.css',
-      imgPath:'../img/sprite.png'
-    }
-  },
+    sprite: {
+      all: {
+        src: '_assets/img/components/*.png',
+        dest: '_assets/img/sprite.png',
+        destCss: '_assets/css/plugins/spriteinfo.css',
+        imgPath:'../img/sprite.png'
+      }
+    },
 
-  watch: {
-    less: {
-      files: [
-      '_assets/css/components/*.less',
-      '_assets/css/plugins/*.less',
-      '_assets/css/components/*.css',
-      '_assets/css/plugins/*.css', 
-      ],
-      tasks: ['recess']
-    },
-    js: {
-      files: [
-      '_assets/js/plugins/*.js',
-      '_assets/js/components/*.js'
-      ],
-      tasks: ['uglify']
-    },
-    img: {
-      files: '_assets/img/components/*.png',
-      tasks: ['sprite'],
-      options: {
-        livereload: true,
+    watch: {
+      less: {
+        files: [
+        '_assets/css/components/*.less',
+        '_assets/css/plugins/*.less',
+        '_assets/css/components/*.css',
+        '_assets/css/plugins/*.css', 
+        ],
+        tasks: ['recess']
+      },
+      js: {
+        files: [
+        '_assets/js/plugins/*.js',
+        '_assets/js/components/*.js'
+        ],
+        tasks: ['uglify']
+      },
+      img: {
+        files: '_assets/img/components/*.png',
+        tasks: ['sprite'],
+        options: {
+          livereload: true,
+        },
       },
     },
-  },
 
-  clean: {
-    dist: [
-    '_assets/css/main.css',
-    '_assets/js/scripts.js'
-    ]
-  }
+    clean: {
+      dist: [
+      '_assets/css/main.css',
+      '_assets/js/scripts.js'
+      ]
+    },
 
-});
+    browserSync: {
+      bsFiles: {
+        src : '_assets/css/*.css'
+      },
+      options: {
+        server: {
+          baseDir: "./"
+        }
+      }
+    }
+
+
+  });
 
    // Load tasks
    grunt.loadNpmTasks('grunt-contrib-clean');
@@ -91,6 +103,7 @@
    grunt.loadNpmTasks('grunt-contrib-watch');
    grunt.loadNpmTasks('grunt-recess');
    grunt.loadNpmTasks('grunt-spritesmith');
+   grunt.loadNpmTasks('grunt-browser-sync');
 
   // Register tasks
   grunt.registerTask('default', [
