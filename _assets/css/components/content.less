@@ -260,6 +260,7 @@
 	width: 100%;
 	background-color: #787878;
 	overflow: hidden;
+	position: relative;
 }
 
 .slider .slider__image-container {
@@ -271,9 +272,9 @@
 .slider .slider__items-container {
 	float: right;
 	background-color: #1d1e20;
-	height: 380px;
 	width: 31.56%;
-	position: relative;
+	position: absolute;
+	right: 0;
 }
 
 .slider .slider__items-container::-webkit-scrollbar {
@@ -417,6 +418,7 @@
 	position: absolute;
 	bottom: 0;
 	max-height: 50px;
+	font-size: 12px;
 }
 
 .random-post__category {
@@ -429,34 +431,70 @@
 	left: 10px;
 }
 
-/********************************************Post-block*/
-.post-block__detail {
+/********************************************post-description*/
+.post-box__detail {
 	float: left;
 	position: relative;
 	margin-bottom: 20px;
+	width: 50%;
+	padding-right: 10px;
 }
 
-.post-block__detail h3 {
+.post-box__detail h3 {
 	font-size: 24px;
 	color:#475055;
 	font-weight: 600;
 	margin-top: 20px;
 	display: inline-block;
+	width: 100%;
 }
 
-.post-block__detail span{
+.post-box__detail span {
 	display: inline-block;
 	color: #a3abaf;
 	font-size: 14px;
 	font-weight: 200;
 	margin-top:20px;
+	width: 100%;
 }
 
-.post-block__detail p {
+.post-box__detail p {
 	color: #585858;
 	font-size: 15px;
 	font-weight: 200;
 	margin-top: 20px;
 	line-height: 21px;
 	display: inline-block;
+	width: 100%;
 }
+
+.post-box .post-list {
+	width: 50%;
+	float: left;
+	padding-left: 10px;
+}
+/***************************************************carousel-posts*/
+.carousel-posts {
+	position: relative;
+	width: 100%;
+}
+.carousel-posts__image-wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel-posts ul li {
+	float: left;
+	margin-right: 2.5%;
+	width: 30%;
+}
+
+.carousel-posts ul li a{
+	margin-right: 2.5%;
+}
+
+
+.carousel-posts ul li img {
+	width: 100%;
+}
+
