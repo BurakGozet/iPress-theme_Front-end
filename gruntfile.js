@@ -85,17 +85,20 @@
 
     browserSync: {
       bsFiles: {
-        src : '_assets/css/*.css'
-      },
-      options: {
-        server: {
-          baseDir: "./"
-        }
+       src : [
+       '_assets/css/main.css',
+       './*.html'
+       ]
+     },
+     options: {
+      server: {
+        baseDir: "./"
       }
     }
+  }
 
 
-  });
+});
 
    // Load tasks
    grunt.loadNpmTasks('grunt-contrib-clean');
@@ -107,12 +110,7 @@
 
   // Register tasks
   grunt.registerTask('default', [
-    'sprite',
-    'recess',
-    'uglify'
-    ]);
-  grunt.registerTask('dev', [
+    'browserSync',
     'watch'
     ]);
-
 };
