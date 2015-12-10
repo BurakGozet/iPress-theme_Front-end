@@ -10,69 +10,69 @@
 </head>
 <body>
 	<header>
-		<!--.className>h2#burasidaID>a.class#id{icerik}-->
-		<div class="header__top-bar">
+		<div class="top-bar">
 			<div class="container nonselect">
 				<div class="row">
-					<div class="col-md-6 hidden-xs hidden-sm clear-padding">
-						<div class="header__top-bar__newsticker">
-							<div class="header__top-bar__newsticker__icon">
-								<div class="header__top-bar__newsticker__icon__outline"></div>
-								<div class="header__top-bar__newsticker__icon__center"></div>
+					<div class="col-md-6 hidden-xs hidden-sm">
+						<div class="top-bar__newsticker">
+							<div class="top-bar__newsticker__icon">
+								<div class="top-bar__newsticker__icon__outline"></div>
+								<div class="top-bar__newsticker__icon__center"></div>
 							</div>
-							<div class="header__top-bar__newsticker__title">
-								<div class="header__top-bar__newsticker__title_text-animation">_</div>
-								<div class="header__top-bar__newsticker__title_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>             
+							<div class="top-bar__newsticker__title">
+								<div class="top-bar__newsticker__title_text-animation">_</div>
+								<div class="top-bar__newsticker__title_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>             
 							</div>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-3 hidden-xs clear-padding">
-						<div class="header__top-bar__date">
-							<div class="header__top-bar__date__text">Tuesday, 10 December</div>
+					<div class="col-md-2 col-sm-3 hidden-xs">
+						<div class="top-bar__date">
+							<div class="top-bar__date__text">Tuesday, 10 December</div>
 						</div>
 					</div>
 					<div class="col-sm-4 visible-sm-block"></div>
-					<div class="col-md-3 col-sm-3 col-xs-4 clear-padding">
-						<div class="header__top-bar__social">
-							<div class="header__top-bar__social__icons">
-								<div class="header__top-bar__social__icons__icon dribbble"><i class="fa fa-dribbble"></i></div>
-								<div class="header__top-bar__social__icons__icon facebook"><i class="fa fa-facebook"></i></div>
-								<div class="header__top-bar__social__icons__icon googleplus"><i class="fa fa-google-plus"></i></div>
-								<div class="header__top-bar__social__icons__icon twitter"><i class="fa fa-twitter"></i></div>
-								<div class="header__top-bar__social__icons__icon rss"><i class="fa fa-rss"></i></div>
-							</div>
+					<div class="col-md-3 col-sm-3 col-xs-9">
+						<div class="top-bar__social">
+							<div class="social-icons">
+								<ul>
+									<li> <a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a></li>
+									<li> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+									<li> <a href="#" class="googleplus"><i class="fa fa-google-plus"></i></a></li>
+									<li> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+									<li> <a href="#" class="rss"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div><!-- /social_icons -->
 						</div>
 					</div>
-					<div class="col-xs-5 visible-xs-block"></div>
-					<div class="col-md-1 col-sm-2 col-xs-3 clear-padding">
-						<div class="header__top-bar__language-change">
-							<div class="header__top-bar__language-change__icon icon-language-us"></div>
+					<div class="col-md-1 col-sm-2 col-xs-3">
+						<div class="top-bar__language-change">
+							<div class="top-bar__language-change__icon icon-language-us"></div>
 						</div>
 					</div>     
 				</div>
 			</div>
 		</div> 
-		<div class="header__main-bar">
+		<div class="main-bar">
 			<div class="container nonselect">
 				<div class="row">
 					<div class="col-lg-4 col-md-4">
 						<a href="#">
-							<img class="header__main-bar__logo pull-left-lg" src="_assets/img/logo.png"/>
+							<img class="main-bar__logo pull-left-lg" src="_assets/img/logo.png"/>
 						</a>
 					</div>
 					<div class="col-lg-8 col-md-8">
 						<a href="#">
-							<img class="header__main-bar__advertisement" src="_assets/img/ads.png"/>
+							<img class="main-bar__advertisement" src="_assets/img/ads.png"/>
 						</a>
 					</div>
 				</div>
 			</div>  
 		</div>
 		<nav>
-			<div class="header__navbar">
+			<div class="navbar">
 				<div class="container nonselect">
-					<div class="header__navbar__collapse-button navbar-toggle collapsed" data-toggle="collapse" data-target="#cps"><i class="fa fa-bars fa-lg"></i></div>
-					<div class="header__navbar__contents collapse navbar-collapse" id="cps">
+					<div class="navbar__collapse-button navbar-toggle collapsed" data-toggle="collapse" data-target="#cps"><i class="fa fa-bars fa-lg"></i></div>
+					<div class="navbar__contents collapse navbar-collapse" id="cps">
 						<ul class="navbar-nav">
 							<li><a href="#"><i class="fa fa-home"></i></a></li>
 							<li><a href="#"><i class="fa fa-bars"></i></a></li>
@@ -335,7 +335,7 @@
 					</div><!-- /widget block -->
 					<div class="widget-block">
 						<div class="widget-block__title">Random Posts</div>
-						<div class="random-post">
+						<div class="random-post clearfix">
 							<ul>
 								<li>
 									<a href="#"><div class="random-post__category">Animals</div></a>
@@ -369,19 +369,64 @@
 							</ul>
 						</div><!-- /random-post -->
 					</div><!-- /widget block -->
+					<div class="widget-block">
+						<div class="widget-block__title">Popular Tags</div>
+						<div class="popular-tags clearfix">
+							<ul>
+								<li>
+									<a href="#">developer</a>
+								</li>
+								<li>
+									<a href="#">business</a>
+								</li>
+								<li>
+									<a href="#">themeforest</a>
+								</li>
+								<li>
+									<a href="#">wordpress themes</a>
+								</li>
+								<li>
+									<a href="#">styles</a>
+								</li>
+								<li>
+									<a href="#">portfolio carousel</a>
+								</li>
+								<li>
+									<a href="#">workstation</a>
+								</li>
+								<li>
+									<a href="#">wordpress plugins</a>
+								</li>
+								<li>
+									<a href="#">begginers tutorials</a>
+								</li>
+							</ul>
+						</div><!-- /popular-tags -->
+					</div><!-- /widget block -->
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s); js.id = id;
+						js.src = "//connect.facebook.net/tr_TR/sdk.js#xfbml=1&version=v2.5";
+						fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script>
+					<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="e.g." data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="widget-block">
 						<div class="widget-block__title color4">Post of the day</div>
 						<div class="post-day clearfix">
 							<a hred="#">
-								<div class="post-day_image clearfix">
+								<div class="post-day__image clearfix">
 									<div class="post-day__category">Holiday</div>
 									<img class="img-responsive" src="_assets/img/media/postofday.jpg"/>
 								</div>
-								<h3>Here's What Instagram Ads Will Look Like</h3>
-								<span>3 hours ago / <a href="#">0 comments</a></span>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry unknown printer took a galley of type and scrambled it to make a type has survived not only fiv...</p>
+								<div class="post-day__detail">
+									<h3>Here's What Instagram Ads Will Look Like</h3>
+									<span>3 hours ago / <a href="#">0 comments</a></span>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry unknown printer took a galley of type and scrambled it to make a type has survived not only fiv...</p>
+								</div>
 							</a>
 						</div><!-- /post-day -->
 					</div><!-- /widget block -->
@@ -552,69 +597,128 @@
 					</div><!-- /widget block -->
 				</div>		
 			</div>
-			<footer>
-				<div class="footer">
-					<div class="container nonselect">
-						<div class="row">
-							<div class="footer__bigger">
-								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-									<div class="footer__bigger__widget">
-										<img src="_assets/img/logo_footer.png"/>
-										<br/>
-										<br/>
-										<br/>
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="container nonselect">
+					<div class="row">
+						<div class="footer__bigger clearfix">
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+								<div class="footer__bigger__about">
+									<img class="img-responsive" src="_assets/img/logo_footer.png"/>
+									<p>
 										iPress is a  magazine Wordpress Theme. Nunc montes odio phasellus dignissim, aenean, nec augue velit integer elementum ut montes quis integer cursus, est purus, lectus duis, scelerisque tincidunt ultricies phasellus elementum turpis tristique.
-										<br/>
-										<br/>
+									</p>
+									<p>
 										Email:  <a href="mailto:information@ipress.com">gozetburak@gmail.com</a>
-									</div>
+									</p>										
 								</div>
-								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-									<div class="footer__bigger__widget">
-										<div class="footer__bigger__widget__title">Recent Posts</div>
-										<ul class="footer__bigger__widget__posts">
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+								<div class="widget-block">
+									<div class="widget-block__title">Recent Posts</div>
+									<div class="post-list clearfix">
+										<ul>
 											<li>
-												<a class="footer__bigger__widget__posts_img" href="#"><img width="70" height="70" src="images/assets/thumb4.jpg"/></a>
-												<h4><a href="#">What is the worst could be the worst?</a></h4>
-												<div>1 day ago</div>
+												<a href="#">
+													<img src="_assets/img/media/post-list_img_1.jpg" />
+													<h5>A New Yorker doesn't necessarily come from...</h5>
+												</a> 				
+												<div class="post-list__meta">					
+													3 minutes ago<a href="#"><span class="post-list__rating rating-yellow"><i class="fa fa-star-o"></i> 9.45</span></a>
+												</div>
 											</li>
 											<li>
-												<a href="#"><img width="70" height="70" src="images/assets/thumb5.jpg"/></a>
-												<h4><a href="#">Praesent ipsum adipiscing mi eget ipsum</a></h4>
-												<div>3 days ago</div>
+												<a href="#">
+													<img src="_assets/img/media/post-list_img_2.jpg" />
+													<h5>Can you guess the most 'overpaid' actor?</h5>
+												</a> 				
+												<div class="post-list__meta">					
+													12 days ago<a href="#"><span class="post-list__rating rating-yellow"><i class="fa fa-star-o"></i> 8</span></a>
+												</div>
 											</li>
 											<li>
-												<a href="#"><img width="70" height="70" src="images/assets/thumb6.jpg"/></a>
-												<h4><a href="#">>Paul Thomson on post with SoundCloud</a></h4>
-												<div>6 days ago</div>
+												<a href="#">
+													<img src="_assets/img/media/post-list_img_3.jpg" />
+													<h5>A New Yorker doesn't necessarily come from...</h5>
+												</a> 				
+												<div class="post-list__meta">					
+													3 month ago
+												</div>
 											</li>
 										</ul>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-									<div class="footer__bigger__widget">
-										<div class="footer__bigger__widget__title">Best Reviews</div>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-									<div class="footer__bigger__widget">
-										<div class="footer__bigger__widget__title">Newsletters</div>
-									</div>
-								</div>
+									</div><!-- /post-list -->
+								</div><!-- /widget block -->
 							</div>
-						</div>
-						<div class="row">
-							<div class="footer__lower"> 
-								<div class="footer__lower__copyright">
-									© iPress Responsive Front-End. Designed by BurakGozet.
-								</div>
-								<div class="footer__lower__back-Top">
-									Back to top <i class="fa fa-upload"></i>
-								</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+								<div class="widget-block">
+									<div class="widget-block__title">Best Reviews</div>
+									<div class="post-list clearfix">
+										<ul>
+											<li>
+												<a href="#">
+													<img src="_assets/img/media/post-list_img_1.jpg" />
+													<h5>A New Yorker doesn't necessarily come from...</h5>
+												</a> 				
+												<div class="post-list__meta">					
+													3 minutes ago<a href="#"><span class="post-list__rating rating-yellow"><i class="fa fa-star-o"></i> 9.45</span></a>
+												</div>
+											</li>
+											<li>
+												<a href="#">
+													<img src="_assets/img/media/post-list_img_2.jpg" />
+													<h5>Can you guess the most 'overpaid' actor?</h5>
+												</a> 				
+												<div class="post-list__meta">					
+													12 days ago<a href="#"><span class="post-list__rating rating-yellow"><i class="fa fa-star-o"></i> 8</span></a>
+												</div>
+											</li>
+											<li>
+												<a href="#">
+													<img src="_assets/img/media/post-list_img_3.jpg" />
+													<h5>A New Yorker doesn't necessarily come from...</h5>
+												</a> 				
+												<div class="post-list__meta">					
+													3 month ago
+												</div>
+											</li>
+										</ul>
+									</div><!-- /post-list -->
+								</div><!-- /widget block -->
 							</div>
-						</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+								<div class="widget-block">
+									<div class="widget-block__title">Newsletters</div>
+									<p>To receive the latest updates and Latest Posts enter your email.</p>	
+									<div class="widget-block__mail-form-wrapper">
+										<input type="text" class="footer__bigger__mail-input" placeholder="type your email"><a href="#" class="footer__bigger__mail-send"><i class="fa fa-check"></i></a>
+									</div>
+								</div><!-- /widget block -->
+								<div class="widget-block">
+									<div class="widget-block__title">Connect with Us</div>
+									<div class="social-icons">
+										<ul>
+											<li> <a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a></li>
+											<li> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+											<li> <a href="#" class="googleplus"><i class="fa fa-google-plus"></i></a></li>
+											<li> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+											<li> <a href="#" class="rss"><i class="fa fa-rss"></i></a></li>
+										</ul>
+									</div><!-- /social_icons -->
+								</div><!-- /widget block -->
+							</div>
+						</div><!-- /Footer bigger -->
+						<div class="footer__lower">
+							<div class="footer__lower__copyright">
+								© iPress Responsive Front-End. Designed by BurakGozet.
+							</div>
+							<div class="footer__lower__back-Top">
+								Back to top <i class="fa fa-upload"></i>
+							</div>
+						</div><!-- /Footer lower -->
 					</div>
 				</div>
-			</footer>
-		</body>
-		</html>
+			</div><!-- /footer -->
+		</footer>
+	</body>
+	</html>
